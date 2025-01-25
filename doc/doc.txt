@@ -1,0 +1,5 @@
+apple@KSM-MacBook-Air cpp % g++ hello.cpp -o hello
+
+apple@KSM-MacBook-Air cpp % ./hello
+
+hello%                 
