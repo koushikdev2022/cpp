@@ -13,11 +13,11 @@ int main(){
    long double e =34.4l;
 
 
-    cout<<"size of"<<sizeof(34.4f)<<endl;
+     cout<<"size of"<<sizeof(34.4f)<<endl;
      cout<<"size of"<<sizeof(34.4F)<<endl;
      cout<<"size of"<<sizeof(34.4l)<<endl;
      cout<<"size of"<<sizeof(34.4L)<<endl;
-      cout<<"size of"<<sizeof(34.4)<<endl;
+     cout<<"size of"<<sizeof(34.4)<<endl;
    //always f for float
 
    // refarance variable
@@ -26,5 +26,5 @@ int main(){
    float & y = x;
    // type custing
    int a = 45;
-    cout<<"size of"<<float(a)<<endl;
+   cout<<"size of"<<float(a)<<endl;
 }
