@@ -3,6 +3,7 @@ public class ThreadDemo extends Thread{
     ThreadDemo(String name){
         super(name);
     }
+    @override
     public void run(){
          System.out.println(Thread.currentThread().getName());
     }
