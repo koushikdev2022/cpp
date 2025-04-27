@@ -1,15 +1,21 @@
 // package collection;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
+import java.util.Map;
 import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.Set;
 import java.util.Stack;
+import java.util.TreeMap;
 import java.util.TreeSet;
+
+
 public class ArrayListLearn {
     public static void main(String args[]){
         ArrayList<String> studentName = new ArrayList<>();
@@ -151,5 +157,119 @@ public class ArrayListLearn {
         System.out.println(setlt);
         System.out.println(setlt.contains(13));
         setlt.clear();
+
+        Map<String,Integer> number = new HashMap<>();
+        number.put("one",1);
+        number.put("two",2);
+        number.put("two2",3);
+        number.put("three",3);
+
+        System.out.println(number);
+
+        if(number.containsKey("two")){
+            number.put("two",2);
+        }
+        number.putIfAbsent("two",23);
+
+        for (Map.Entry<String,Integer> e: number.entrySet()){
+            System.out.println(e);
+            System.out.println(e.getKey());
+            System.out.println(e.getValue());
+        }
+
+
+        for(String key: number.keySet()){
+            System.out.println(key);
+        }
+
+        for(Integer val: number.values()){
+            System.out.println(val);
+        }
+
+        System.out.println(number.containsValue(3));
+        System.out.println(number.containsKey("two"));
+
+
+        System.out.println(number.isEmpty());
+
+        number.clear();
+
+
+
+
+        Map<String,Integer> number1 = new TreeMap<>();
+        number1.put("one",1);
+        number1.put("two",2);
+        number1.put("two2",3);
+        number1.put("four",4);
+
+        System.out.println(number1);
+
+        if(number1.containsKey("two")){
+            number1.put("two",2);
+        }
+        number1.putIfAbsent("two",23);
+
+        for (Map.Entry<String,Integer> e: number1.entrySet()){
+            System.out.println(e);
+            System.out.println(e.getKey());
+            System.out.println(e.getValue());
+        }
+
+
+        for(String key: number1.keySet()){
+            System.out.println(key);
+        }
+
+        for(Integer val: number1.values()){
+            System.out.println(val);
+        }
+
+        System.out.println(number1.containsValue(3));
+        System.out.println(number1.containsKey("two"));
+
+
+        System.out.println(number1.isEmpty());
+
+        number1.clear();
+
+
+
+
+        Map<String,Integer> number3 = new LinkedHashMap<>();
+        number3.put("one",1);
+        number3.put("two",2);
+        number3.put("two2",3);
+        number3.put("four",4);
+
+        System.out.println(number3);
+
+        if(number3.containsKey("two")){
+            number3.put("two",2);
+        }
+        number3.putIfAbsent("two",23);
+
+        for (Map.Entry<String,Integer> e: number3.entrySet()){
+            System.out.println(e);
+            System.out.println(e.getKey());
+            System.out.println(e.getValue());
+        }
+
+
+        for(String key: number3.keySet()){
+            System.out.println(key);
+        }
+
+        for(Integer val: number3.values()){
+            System.out.println(val);
+        }
+
+        System.out.println(number3.containsValue(3));
+        System.out.println(number3.containsKey("two"));
+
+
+        System.out.println(number3.isEmpty());
+
+        number3.clear();
     }
 }
